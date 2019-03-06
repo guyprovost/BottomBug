@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<fragment
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    class="com.google.android.gms.maps.MapFragment"
+    android:layout_marginTop="24dp" />
+
+<LinearLayout
+    android:id="@+id/controlBar"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:background="@color/colorAccent"
+    android:gravity="bottom">
+    <Button
+        android:id="@+id/testbutton1"
+        android:text="One"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_weight=".30"/>
+    <Button
+        android:id="@+id/testbutton2"
+        android:text="Two"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_weight=".40" />
+    <Button
+        android:id="@+id/testbutton3"
+        android:text="Three"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_weight=".30" />
+</LinearLayout>
+
+</LinearLayout>
